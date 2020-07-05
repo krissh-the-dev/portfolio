@@ -12,3 +12,10 @@ h5 {
 h6 {
   font-family: 'code-saver', monospace;
 }
+
+body,
+input,
+button,
+select {
+  font-family: $font-family-secondary;
+}
