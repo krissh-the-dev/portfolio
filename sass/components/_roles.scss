@@ -1,15 +1,20 @@
 .roles {
-  height: 70rem;
   width: 100%;
-  margin: 4rem 0;
+  padding: 4rem 0;
 
   background-color: $color-bluish-gray;
 
   .role {
     display: flex;
+    max-width: 80%;
+    margin: 4rem auto;
 
     &>div {
-      padding: 2rem;
+      margin: 4rem 0;
+
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
     }
 
     &__illustration {

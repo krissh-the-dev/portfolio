@@ -389,6 +389,11 @@ h5 {
   font-family: 'Manrope', sans-serif;
 }
 
+h3 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
 h6 {
   font-family: 'code-saver', monospace;
 }
@@ -398,6 +403,16 @@ input,
 button,
 select {
   font-family: "catamaran", sans-serif;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  color: #60c;
+}
+
+.description {
+  font-size: 1.8rem;
+  color: #111;
 }
 
 .u-text-center {
@@ -768,9 +783,8 @@ select {
 }
 
 .roles {
-  height: 70rem;
   width: 100%;
-  margin: 4rem 0;
+  padding: 4rem 0;
   background-color: #f2f3ff;
 }
 
@@ -778,10 +792,16 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 80%;
+  margin: 4rem auto;
 }
 
 .roles .role > div {
-  padding: 2rem;
+  margin: 4rem 0;
+}
+
+.roles .role > div:not(:last-child) {
+  margin-right: 4rem;
 }
 
 .roles .role__illustration {
