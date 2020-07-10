@@ -4,4 +4,28 @@
   margin: 4rem 0;
 
   background-color: $color-bluish-gray;
+
+  .role {
+    display: flex;
+
+    &>div {
+      padding: 2rem;
+    }
+
+    &__illustration {
+      width: 50%;
+      height: auto;
+
+      &>img {
+        width: 100%;
+
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    &__explanation {
+      width: 50%;
+    }
+  }
 }

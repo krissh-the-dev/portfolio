@@ -491,8 +491,6 @@ select {
 .hero {
   height: 100vh;
   width: 100%;
-  background-size: cover;
-  background-position: top;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -622,7 +620,7 @@ select {
 
 .social__link-icon-container {
   height: 4rem;
-  width: 4.1rem;
+  width: 4.2rem;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -664,11 +662,11 @@ select {
 }
 
 .social__link:hover .social__link-icon-container {
-  background-color: #408;
+  background-color: #81f;
 }
 
 .social__link:hover .social__link-icon {
-  fill: #408;
+  fill: #81f;
 }
 
 .nav {
@@ -723,7 +721,7 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #408;
+  background-color: #60c;
   -webkit-clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
           clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 }
@@ -749,7 +747,7 @@ select {
 .nav__item-icon {
   height: 2rem;
   width: 2rem;
-  fill: #408;
+  fill: #60c;
 }
 
 .nav__item-text {
@@ -774,4 +772,31 @@ select {
   width: 100%;
   margin: 4rem 0;
   background-color: #f2f3ff;
+}
+
+.roles .role {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.roles .role > div {
+  padding: 2rem;
+}
+
+.roles .role__illustration {
+  width: 50%;
+  height: auto;
+}
+
+.roles .role__illustration > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.roles .role__explanation {
+  width: 50%;
 }

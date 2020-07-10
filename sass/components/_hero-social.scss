@@ -15,7 +15,7 @@
 
     &-icon-container {
       height: 4rem;
-      width: 4.1rem;
+      width: 4.2rem;
       padding: 1rem;
       display: flex;
       align-items: center;
@@ -44,11 +44,11 @@
     }
 
     &:hover &-icon-container {
-      background-color: $color-primary-dark;
+      background-color: $color-primary-light;
     }
 
     &:hover &-icon {
-      fill: $color-primary-dark;
+      fill: $color-primary-light;
     }
   }
 }
