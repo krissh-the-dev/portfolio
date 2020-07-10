@@ -1,11 +1,14 @@
 .nav {
-  position: fixed;
-  top: 50%;
-  right: 6rem;
-  transform: translateY(-50%);
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 150;
 
   &__list {
     list-style: none;
+    display: flex;
 
     animation: .8s float-in-right;
   }
@@ -15,50 +18,57 @@
     color: $color-white;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
   &__item {
     font-size: 1rem;
-    margin: 2rem 0;
+    margin: 0 2rem;
     padding: .5rem;
-    border-radius: 5rem;
-
-    background-image: linear-gradient(to right, $color-primary-dark, $color-primary-light);
 
     &-icon-container {
-      height: 3.5rem;
-      width: 3.5rem;
+      height: 5rem;
+      width: 4.8rem;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $color-primary-dark;
+      clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    }
+
+    &-icon-container-inner {
+      height: 4.9rem;
+      width: 4.9rem;
+      padding: 1rem;
       display: flex;
       align-items: center;
       justify-content: center;
 
-      border-radius: 50%;
-      background-image: linear-gradient(to bottom right, $color-secondary-dark, $color-secondary-light);
+      background-color: $color-white;
+      clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
     }
 
     &-icon {
       height: 2rem;
       width: 2rem;
-      fill: currentColor;
+      fill: $color-primary-dark;
     }
 
     &-text {
-      display: inline-block;
-      text-transform: uppercase;
-      text-align: left;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
+      color: $color-primary-dark;
+      font-weight: 700;
+      opacity: 0;
+      transform: translateY(-1rem);
 
-      margin: 0;
-      max-width: 0;
-      overflow: hidden;
-
-      transition: all .4s ease-in-out;
+      transition: .3s all;
     }
 
     &:hover &-text {
-      max-width: 10rem;
-      margin: 0 1.4rem 0 .8rem;
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 }

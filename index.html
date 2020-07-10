@@ -14,78 +14,109 @@
   <!-- Custom styles -->
   <link rel="stylesheet" href="css/main.min.css">
 
+  <!-- Favicon -->
+  <link rel="favicon" href="images/krish.png" type="image/x-icon">
+  <link rel="shortcut icon" href="images/krish.png" type="image/x-icon">
+
   <title>Krishna Moorthy</title>
 </head>
 
 <body>
-  <div class="hero">
+  <section class="hero">
     <div class="hero__container">
       <div class="hero__greet">
         Hi, I am
       </div>
       <h1 class="hero__title">
-        Krishna Moorthy
+        <span class="firstName">Krishna</span>&nbsp;Moorthy
       </h1>
       <div class="hero__roles">
         Student | Full stack developer
       </div>
     </div>
+
+    <div class="hero__shape--square"></div>
+    <div class="hero__shape--circle"></div>
+    <div class="hero__watermark">DEV</div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <span class="nav__item-icon-container">
+              <div class="nav__item-icon-container-inner">
+                <svg class="nav__item-icon">
+                  <use xlink:href="icons/sprite.svg#icon-target"></use>
+                </svg>
+              </div>
+            </span>
+            <span class="nav__item-text">Passion</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <span class="nav__item-icon-container">
+              <div class="nav__item-icon-container-inner">
+                <svg class="nav__item-icon">
+                  <use xlink:href="icons/sprite.svg#icon-trello"></use>
+                </svg>
+              </div>
+            </span>
+            <span class="nav__item-text">Projects</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <span class="nav__item-icon-container">
+              <div class="nav__item-icon-container-inner">
+                <svg class="nav__item-icon">
+                  <use xlink:href="icons/sprite.svg#icon-feather"></use>
+                </svg>
+              </div>
+            </span>
+            <span class="nav__item-text">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="social">
+      <a href="#" class="social__link github">
+        <span class="social__link-icon-container">
+          <div class="social__link-icon-container-inner">
+            <svg class="social__link-icon">
+              <use xlink:href="icons/sprite.svg#icon-github"></use>
+            </svg>
+          </div>
+        </span>
+      </a>
+      <a href="#" class="social__link twitter">
+        <span class="social__link-icon-container">
+          <div class="social__link-icon-container-inner">
+            <svg class="social__link-icon">
+              <use xlink:href="icons/sprite.svg#icon-twitter"></use>
+            </svg>
+          </div>
+        </span>
+      </a>
+      <a href="#" class="social__link instagram">
+        <span class="social__link-icon-container">
+          <div class="social__link-icon-container-inner">
+            <svg class="social__link-icon">
+              <use xlink:href="icons/sprite.svg#icon-instagram"></use>
+            </svg>
+          </div>
+        </span>
+      </a>
+    </div>
+  </section>
+  <div class="hero__shape--hexagon">
+    <img src="images/krish.png" alt="" class="hero__logo" />
   </div>
 
-  <nav class="nav">
-    <ul class="nav__list">
-      <li class="nav__item">
-        <a href="#" class="nav__link">
-          <span class="nav__item-icon-container">
-            <svg class="nav__item-icon">
-              <use xlink:href="icons/sprite.svg#icon-home"></use>
-            </svg>
-          </span>
-          <span class="nav__item-text">About</span>
-        </a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link">
-          <span class="nav__item-icon-container">
-            <svg class="nav__item-icon">
-              <use xlink:href="icons/sprite.svg#icon-target"></use>
-            </svg>
-          </span>
-          <span class="nav__item-text">Passion</span>
-        </a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link">
-          <span class="nav__item-icon-container">
-            <svg class="nav__item-icon">
-              <use xlink:href="icons/sprite.svg#icon-trello"></use>
-            </svg>
-          </span>
-          <span class="nav__item-text">Projects</span>
-        </a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link">
-          <span class="nav__item-icon-container">
-            <svg class="nav__item-icon">
-              <use xlink:href="icons/sprite.svg#icon-feather"></use>
-            </svg>
-          </span>
-          <span class="nav__item-text">Contact</span>
-        </a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link">
-          <span class="nav__item-icon-container">
-            <svg class="nav__item-icon">
-              <use xlink:href="icons/sprite.svg#icon-message-circle"></use>
-            </svg>
-          </span>
-          <span class="nav__item-text">Social</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
+  <section class="roles">
+
+  </section>
 </body>
 
 </html>
