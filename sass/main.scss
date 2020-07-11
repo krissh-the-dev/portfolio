@@ -8,7 +8,9 @@
 @import './base/typography';
 @import './base/utilities';
 
-@import './components/hero';
-@import './components/hero-social';
-@import './components/navigation';
-@import './components/roles';
+@import './components/button';
+
+@import './sections/hero';
+@import './sections/hero-social';
+@import './sections/navigation';
+@import './sections/roles';

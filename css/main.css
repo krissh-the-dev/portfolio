@@ -395,6 +395,7 @@ h3 {
 }
 
 h6 {
+  font-size: 1.3rem;
   font-family: 'code-saver', monospace;
 }
 
@@ -503,6 +504,31 @@ select {
   margin-top: 1rem !important;
 }
 
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid #60c;
+  font-size: 1.3rem;
+  font-family: "Manrope", sans-serif;
+  text-decoration: none;
+  color: #60c;
+  font-weight: 600;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #60c 50%);
+  background-size: 220%;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.btn:hover, .btn:active {
+  background-position: 100%;
+  color: #fff;
+  -webkit-box-shadow: 0 0 1rem #60c;
+          box-shadow: 0 0 1rem #60c;
+}
+
 .hero {
   height: 100vh;
   width: 100%;
@@ -520,6 +546,7 @@ select {
 
 .hero__container {
   margin: 4rem 8rem;
+  z-index: 150;
 }
 
 .hero__greet {
@@ -772,8 +799,8 @@ select {
   opacity: 0;
   -webkit-transform: translateY(-1rem);
           transform: translateY(-1rem);
-  -webkit-transition: .3s all;
-  transition: .3s all;
+  -webkit-transition: .2s all;
+  transition: .2s all;
 }
 
 .nav__item:hover .nav__item-text {
@@ -794,6 +821,10 @@ select {
   display: flex;
   max-width: 80%;
   margin: 4rem auto;
+}
+
+.roles .role:nth-of-type(even) {
+  text-align: right;
 }
 
 .roles .role > div {

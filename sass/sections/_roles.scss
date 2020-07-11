@@ -9,6 +9,10 @@
     max-width: 80%;
     margin: 4rem auto;
 
+    &:nth-of-type(even) {
+      text-align: right;
+    }
+
     &>div {
       margin: 4rem 0;
 
