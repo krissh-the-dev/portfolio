@@ -15,6 +15,12 @@ html {
 
 body {
   box-sizing: border-box;
-
+  background-color: $color-white;
+  color: $color-gray-8;
   overflow-x: hidden;
+
+  @include theme(dark) {
+    background-color: $color-gray-8;
+    color: $color-gray-3;
+  }
 }

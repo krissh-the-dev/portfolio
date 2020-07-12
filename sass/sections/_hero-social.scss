@@ -35,6 +35,10 @@
 
       background-color: $color-white;
       clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+
+      @include theme(dark) {
+        background-color: $color-gray-8;
+      }
     }
 
     &-icon {

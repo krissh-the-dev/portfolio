@@ -34,4 +34,8 @@ select {
 .description {
   font-size: 1.8rem;
   color: $color-gray-7;
+
+  @include theme(dark) {
+    color: $color-gray-4;
+  }
 }

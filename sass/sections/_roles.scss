@@ -2,7 +2,11 @@
   width: 100%;
   padding: 4rem 0;
 
-  background-color: $color-bluish-gray;
+  background-color: $color-even-section;
+
+  @include theme(dark) {
+    background-color: $color-gray-7;
+  }
 
   .role {
     display: flex;

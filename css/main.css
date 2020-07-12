@@ -375,7 +375,16 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #fff;
+  color: #090909;
   overflow-x: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #090909;
+    color: #eee;
+  }
 }
 
 h1 {
@@ -414,6 +423,12 @@ select {
 .description {
   font-size: 1.8rem;
   color: #111;
+}
+
+@media (prefers-color-scheme: dark) {
+  .description {
+    color: #e4e4e4;
+  }
 }
 
 .u-text-center {
@@ -522,11 +537,17 @@ select {
   transition: all .2s ease-in-out;
 }
 
+@media (prefers-color-scheme: dark) {
+  .btn, .btn:link, .btn:visited {
+    color: #81f;
+  }
+}
+
 .btn:hover, .btn:active {
   background-position: 100%;
   color: #fff;
-  -webkit-box-shadow: 0 0 1rem #60c;
-          box-shadow: 0 0 1rem #60c;
+  -webkit-box-shadow: 0 0 1rem #408;
+          box-shadow: 0 0 1rem #408;
 }
 
 .hero {
@@ -562,7 +583,6 @@ select {
   font-size: 8rem;
   font-weight: 100;
   margin-left: -.6rem;
-  color: #111;
   z-index: 100;
   -webkit-animation: .6s float-in-left;
           animation: .6s float-in-left;
@@ -631,6 +651,12 @@ select {
   overflow: hidden;
 }
 
+@media (prefers-color-scheme: dark) {
+  .hero__shape--hexagon {
+    opacity: .4;
+  }
+}
+
 .hero__logo {
   width: 100%;
   -o-object-fit: cover;
@@ -697,6 +723,12 @@ select {
           clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
 }
 
+@media (prefers-color-scheme: dark) {
+  .social__link-icon-container-inner {
+    background-color: #090909;
+  }
+}
+
 .social__link-icon {
   height: 1.5rem;
   width: 1.5rem;
@@ -748,6 +780,10 @@ select {
   font-size: 1rem;
   margin: 0 2rem;
   padding: .5rem;
+  -webkit-transition: -webkit-filter .2s;
+  transition: -webkit-filter .2s;
+  transition: filter .2s;
+  transition: filter .2s, -webkit-filter .2s;
 }
 
 .nav__item-icon-container {
@@ -786,6 +822,12 @@ select {
           clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
 }
 
+@media (prefers-color-scheme: dark) {
+  .nav__item-icon-container-inner {
+    background-color: #090909;
+  }
+}
+
 .nav__item-icon {
   height: 2rem;
   width: 2rem;
@@ -803,16 +845,34 @@ select {
   transition: .2s all;
 }
 
+@media (prefers-color-scheme: dark) {
+  .nav__item-text {
+    color: #81f;
+  }
+}
+
 .nav__item:hover .nav__item-text {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  display: inline-block;
+}
+
+.nav__item:hover {
+  -webkit-filter: drop-shadow(0 0 0.3rem #81f);
+          filter: drop-shadow(0 0 0.3rem #81f);
 }
 
 .roles {
   width: 100%;
   padding: 4rem 0;
   background-color: #f2f3ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .roles {
+    background-color: #111;
+  }
 }
 
 .roles .role {

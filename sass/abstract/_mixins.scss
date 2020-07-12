@@ -11,6 +11,12 @@
   align-items: center;
 }
 
+@mixin theme($scheme) {
+  @media (prefers-color-scheme: $scheme) {
+    @content;
+  }
+}
+
 /* MEDIA QUERY MANAGER
  *
  * 0 - 600px => phone
@@ -18,12 +24,6 @@
  * 900px - 1200px => tablet landscape
  * 1200px+ => desktop
  */
-
-@mixin respond-phone {
-  @media (max-width: 600px) {
-    @content;
-  }
-}
 
 /*
  * CHOICES:
