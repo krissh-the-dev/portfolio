@@ -21,6 +21,16 @@ body {
 
   @include theme(dark) {
     background-color: $color-gray-8;
-    color: $color-gray-3;
+    color: $color-gray-1;
   }
+}
+
+::selection {
+  background-color: $color-primary-main;
+  color: $color-white;
+}
+
+.section-title {
+  text-align: center;
+  margin: 2rem auto;
 }

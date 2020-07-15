@@ -383,8 +383,23 @@ body {
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #090909;
-    color: #eee;
+    color: #f7f7f7;
   }
+}
+
+::-moz-selection {
+  background-color: #60c;
+  color: #fff;
+}
+
+::selection {
+  background-color: #60c;
+  color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  margin: 2rem auto;
 }
 
 h1 {
@@ -398,9 +413,17 @@ h5 {
   font-family: 'Manrope', sans-serif;
 }
 
-h3 {
+h4 {
   font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
   font-weight: 600;
+}
+
+h4 {
+  font-size: 2.5rem;
 }
 
 h6 {
@@ -413,6 +436,28 @@ input,
 button,
 select {
   font-family: "catamaran", sans-serif;
+}
+
+.heading-secondary {
+  font-size: 3.6rem;
+  color: #81f;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+
+.heading-secondary::after {
+  content: "";
+  height: .8rem;
+  width: 20%;
+  position: absolute;
+  bottom: -1rem;
+  right: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#81f), color-stop(#60c), to(#81f));
+  background-image: linear-gradient(to right, #81f, #60c, #81f);
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(136, 17, 255, 0.6);
+          box-shadow: 0 0.5rem 1rem rgba(136, 17, 255, 0.6);
 }
 
 .heading-tertiary {
@@ -548,6 +593,11 @@ select {
   color: #fff;
   -webkit-box-shadow: 0 0 1rem #408;
           box-shadow: 0 0 1rem #408;
+}
+
+.features {
+  font-size: 1.4rem;
+  margin-left: 2rem;
 }
 
 .hero {
@@ -910,4 +960,35 @@ select {
 
 .roles .role__explanation {
   width: 50%;
+}
+
+.projects {
+  max-width: 120rem;
+  margin: 10rem auto;
+}
+
+.projects .project {
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects .project > * {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.projects .project__figure {
+  width: 100%;
+  height: 100%;
+}
+
+.projects .project__image {
+  width: 90%;
+  max-height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
