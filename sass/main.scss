@@ -8,11 +8,15 @@
 @import './base/typography';
 @import './base/utilities';
 
+@import './components/badge';
 @import './components/button';
+@import './components/divider';
 @import './components/features';
+@import './components/role';
+@import './components/project';
+@import './components/navigation';
 
 @import './sections/hero';
 @import './sections/hero-social';
-@import './sections/navigation';
 @import './sections/roles';
 @import './sections/projects';

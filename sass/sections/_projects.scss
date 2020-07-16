@@ -1,25 +1,4 @@
 .projects {
-  max-width: 120rem;
+  max-width: 100rem;
   margin: 10rem auto;
-
-  .project {
-    padding: 4rem;
-    display: flex;
-
-    &>* {
-      flex-basis: 50%;
-    }
-
-    &__figure {
-      width: 100%;
-      height: 100%;
-    }
-
-    &__image {
-      width: 90%;
-      max-height: 25rem;
-      object-fit: cover;
-      object-position: center;
-    }
-  }
 }

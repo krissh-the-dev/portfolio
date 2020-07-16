@@ -58,6 +58,10 @@ select {
 .heading-tertiary {
   font-size: 3rem;
   color: $color-primary-main;
+
+  @include theme(dark) {
+    color: $color-primary-light;
+  }
 }
 
 .description {

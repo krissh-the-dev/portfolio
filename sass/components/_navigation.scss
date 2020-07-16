@@ -38,6 +38,10 @@
       justify-content: center;
       background-color: $color-primary-main;
       clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+
+      @include theme(dark) {
+        background-color: $color-primary-light;
+      }
     }
 
     &-icon-container-inner {
@@ -60,6 +64,10 @@
       height: 2rem;
       width: 2rem;
       fill: $color-primary-main;
+
+      @include theme(dark) {
+        full: $color-primary-light;
+      }
     }
 
     &-text {
